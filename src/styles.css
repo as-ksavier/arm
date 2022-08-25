@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.errorMessage {
+  color: red;
+  margin: 10px;
+}
+.row {
+  margin: 5px auto;
+  width: 500px;
+}
+.row label {
+  width: 100px;
+  display: inline-block;
+}
+
+/* Add this css to HomePage */
+.homepage {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  background-color: lightgray;
+  max-width: 15em;
+  margin: 0 0 0 auto;
+  padding: 0.6em;
+  border-radius: 0.6em;
+  min-width: 10em;
+}
+.homepage div.username::after {
+  content: "⏐";
+  margin-left: 0.03em;
+}
+
+.homepage div.role {
+  margin-left: 0.3em;
+}
+
+.homepage div.role::after {
+  content: "⏐";
+  margin-left: 0.03em;
+}
